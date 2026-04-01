@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body{
+    background-color: aqua;
+}
+
+h1 {
+  color: #fff; /* keep text white */
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  margin: 1rem;
+
+  /* Animated Gradient Background */
+  background: linear-gradient(270deg, 
+    red, orange, yellow, green, blue, purple
+  );
+  background-size: 1200% 120%;
+
+  animation: gradientMove 4s infinite linear;
+
+}
+
+/* Animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+
+#user-score,#comp-score{
+    font-size: 5rem;
+
+}
+
+
+.msg-container{
+    margin-top: 3rem;
+}
+#msg{
+    background-color: rgba(6, 129, 88, 0.8);
+    color: aqua;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.round-container {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #081b31;
+}
+
+.result-container {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: rgb(18, 182, 146);
+}
+
+#play-again {
+  margin-left: 15px;
+  padding: 10px 15px;
+  display: none;
+  border: none;
+  border-radius: 8px;
+  background-color: orange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#play-again:hover {
+  background-color: darkorange;
+}
